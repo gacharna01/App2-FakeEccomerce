@@ -6,7 +6,7 @@ import CartWidge from './CartWidge'
 const Navbar = () => {
   return (
     <nav className="navbar">
-        <a href="#" className="logo"><h1>StreetWear</h1></a>
+        <Link to="/" className="logo"><h1>StreetWear</h1></Link>
         <ul className="menu">
             <li><Link className="menu-link" to="/">Home</Link></li>
             <li><Link className="menu-link" to="/category">Category</Link></li>
