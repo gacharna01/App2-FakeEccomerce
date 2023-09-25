@@ -8,6 +8,7 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import { Route, Routes } from 'react-router'
 import { Link } from 'react-router-dom'
+import Detalle from './pages/Detalle'
 
 const App = () => {
   return (
@@ -16,17 +17,13 @@ const App = () => {
 
       <Routes>
         <Route path='/' element={<Home />}/>
-        <Route path='/about' element={<About />}/>
-         <Route path='/contact' element={<Contact />} />
+        <Route path='/category/:categoryId'element={<Home />}/>
          <Route path='/detalle:id/' element={<Detalle />}/>
+          {/* <Route path='/about' element={<About />}/>
+         <Route path='/contact' element={<Contact />} /> */}
       </Routes>
       
       
-      
-      
-      
-      <ItemListContainer />
-      <ItemDetailContainer />
     </>
   )
 }

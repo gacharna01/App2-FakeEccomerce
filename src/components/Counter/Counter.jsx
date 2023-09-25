@@ -1,14 +1,15 @@
 import React, { useState } from 'react'
 
 const Counter = () => {
-    const [Count, setCount] = useState(0)
+    const [count, setCount] = useState(0)
 
     const increment = () => {
+        
         setCount(count + 1)
     }
     const decrement = () => {
-        if (Count > 1){
-        setCount(count - 1)
+        if(count > 1){
+            setCount(count - 1)
         }
     }
   return (

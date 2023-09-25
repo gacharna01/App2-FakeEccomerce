@@ -1,11 +1,14 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams } from 'react-router'
+import ItemDetailContainer from '../components/Details/ItemDetailContainer'
 
 const Detalle = () => {
-  const { id } = useParams()
-  console.log(id)
+    const { id } = useParams()
+    
   return (
-    <div>Detalle</div>
+    <div>
+      <ItemDetailContainer id={id}/>
+    </div>
   )
 }
 
