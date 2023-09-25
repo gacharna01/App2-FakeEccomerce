@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import Counter from '../Counter/Counter'
 
 
 const ItemDetail = ({ item }) => {
@@ -16,6 +17,7 @@ const ItemDetail = ({ item }) => {
         <p>
             Category: {item.category}
         </p>
+        <Counter />
     </div>
   )
 }
